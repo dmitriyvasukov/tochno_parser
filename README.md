@@ -1,4 +1,4 @@
-# Парсер и загрузчик CSV из JavaScript-объекта window.__NUXT__ с сайта tochno.st
+# Парсер и загрузчик CSV из сайта tochno.st
 
 Этот скрипт автоматически находит, скачивает и извлекает CSV-файлы из JavaScript-объекта `window.__NUXT__` на сайте tochno.st
 
