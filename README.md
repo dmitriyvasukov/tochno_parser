@@ -21,3 +21,27 @@
 - Скачивание и распаковка архивов
 
 - Фильтрация CSV-файлов
+
+## Пример использования: 
+
+### Шаг 1: 
+
+- Вставляем ссылку и директорию папки в конфиг:
+
+<img width="388" height="59" alt="image" src="https://github.com/user-attachments/assets/fa659f0b-4412-4d9d-9c27-67592265e197" />
+
+### Шаг 2: 
+- Запускаем программу, в терминале видим следующее:
+<img width="1131" height="96" alt="image" src="https://github.com/user-attachments/assets/b74ebed5-7fed-42e3-9d1a-7d144250604f" />
+
+### Шаг 3:
+- После загрузки в терминале отобразится размер файла:
+<img width="221" height="42" alt="image" src="https://github.com/user-attachments/assets/edf564db-de4b-447e-a19d-58423bb8fc9f" />
+
+- Как видим, файл успешно скачался в указанную папку:
+<img width="374" height="93" alt="image" src="https://github.com/user-attachments/assets/03b68d6f-96d5-4cf1-b194-668f7af04157" />
+
+
+
+
+
