@@ -18,9 +18,9 @@
 
 ```
 tochno_parser/
-├── downloader.py             # Основной скрипт
-├── catalog_parser.py
-├── urls.txt              # Файл со списком URL (по желанию)
+├── downloader.py         # Основной скрипт
+├── catalog_parser.py     # Создает файл urls.txt
+├── urls.txt              # Файл со списком URL
 ├── requirements.txt      # Зависимости
 ├── downloaded_data/      # Папка для распакованных CSV
 └── README.md             # Этот файл
