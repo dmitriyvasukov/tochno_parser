@@ -6,6 +6,11 @@ import io
 from bs4 import BeautifulSoup
 from urllib.parse import unquote
 
+#Конфиг
+url = "https://tochno.st/datasets/pres_grants"
+output_dir = "downloaded_data"
+
+
 def download_and_extract_zip(url, output_dir):
     try:
         print(f"Скачять): {url}")
@@ -32,9 +37,7 @@ def download_and_extract_zip(url, output_dir):
     except Exception as e:
         print(f"Ошибка при обработке {url}: {type(e).__name__} - {str(e)}")
 
-# Настройки
-url = "https://tochno.st/datasets/pres_grants"
-output_dir = "downloaded_data"
+
 
 os.makedirs(output_dir, exist_ok=True)
 print(f"Сохранение в: {os.path.abspath(output_dir)}")
