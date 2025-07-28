@@ -61,7 +61,7 @@ try:
         for match in file_matches:
             file_url = match.group(1).replace('\\/', '/').replace('\\u002F', '/')
             file_url = unquote(file_url)
-            print(f"\n4. Найден архив: {file_url}")
+            print(f"Найден архив: {file_url}")
             download_and_extract_zip(file_url, output_dir)
             
 except Exception as e:
