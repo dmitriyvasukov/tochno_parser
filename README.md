@@ -40,7 +40,7 @@ python downloader.py
 
 ###  2. Скачивание с URL из файла
 
-Перед началом работы нужно запустить catalog_parses.py для создания `urls.txt`
+Перед началом работы нужно запустить catalog_parser.py для создания `urls.txt`
 
 ---
 
