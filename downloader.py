@@ -12,7 +12,7 @@ output_dir = "downloaded_data"
 
 
 def download_and_extract_zip(url, output_dir):
-    try:
+
         print(f"Скачять): {url}")
         response = requests.get(url, timeout=10)
         response.raise_for_status()
@@ -33,16 +33,16 @@ def download_and_extract_zip(url, output_dir):
             for file in csv_files:
                 zip_ref.extract(file, extract_path)
                 print(f"Успешно извлечен: {os.path.join(extract_path, file)}")
-                
-    except Exception as e:
-        print(f"Ошибка при обработке {url}: {type(e).__name__} - {str(e)}")
+
 
 
 
 os.makedirs(output_dir, exist_ok=True)
 print(f"Сохранение в: {os.path.abspath(output_dir)}")
 
-try:
+
+
+def process_page(url):
     response = requests.get(url, timeout=10)
     soup = BeautifulSoup(response.text, 'html.parser')
     
@@ -64,5 +64,11 @@ try:
             print(f"Найден архив: {file_url}")
             download_and_extract_zip(file_url, output_dir)
             
-except Exception as e:
-    print(f"Ошибка: {type(e).__name__} - {str(e)}")
+
+
+with open("urls.txt", "r", encoding="utf-8") as f:
+    urls = [line.strip() for line in f if line.strip()]
+
+
+for url in urls:
+    process_page(url)
